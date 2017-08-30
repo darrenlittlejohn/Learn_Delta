@@ -1,0 +1,20 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1> Hello LEARN Family</h1>
+
+    <img src="./images/640px-Trivia.png" height="30%" width="30%"/>
+    <h3>Who are you?</h3>
+    <h3> San Diego Trivia </h3>
+       <ul>
+         <% for(var key in questions) { %>
+           <li>
+             <a href="/trivia/<%= key %>">
+               <%= questions[key]["question"] %>
+             </a>
+           </li>
+         <% } %>
+       </ul>
+  </body>
+</html>
