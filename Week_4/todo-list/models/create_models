@@ -1,0 +1,3 @@
+sequelize model:create --name TodoList --attributes name:string,status:string
+
+sequelize model:create --name ActionItems --attributes name:string
